@@ -105,7 +105,7 @@ function mizv_display_fb_group_1_users() {
     // Check if we have any data returned
     if (!empty($users_data)) {
         echo '<table>';
-        echo '<tr><th>ID</th><th>Full Name</th><th>User Link</th><th>Questions & Answers</th><th>Date Time</th></tr>';
+        echo '<tr><th>ID</th><th>The User</th><th>Questions & Answers</th><th>Date Time</th></tr>';
 
         // Loop through each user and display their data
         foreach ($users_data as $user) {
@@ -114,8 +114,7 @@ function mizv_display_fb_group_1_users() {
 
             echo '<tr>';
             echo '<td>' . esc_html($user['ID']) . '</td>';
-            echo '<td>' . esc_html($user['user_full_name']) . '</td>';
-            echo '<td><a href="https://facebook.com' . esc_url($user['user_link']) . '">'. esc_html($user['user_link']) .'</a></td>';
+            echo '<td>' . esc_html($user['user_full_name']) . ' <a href="https://facebook.com' . esc_url($user['user_link']) . '">'. esc_html($user['user_link']) .'</a></td>';
             echo '<td>';
             if (!empty($qus_ans)) {
                 // Loop through each question and answer
