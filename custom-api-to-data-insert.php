@@ -105,7 +105,7 @@ function mizv_display_fb_group_1_users() {
     // Check if we have any data returned
     if (!empty($users_data)) {
         echo '<table>';
-        echo '<tr><th>ID</th><th>The User</th><th>Questions & Answers</th><th>Date Time</th></tr>';
+        echo '<tr><th>ID</th><th>The Users</th><th>Questions & Answers</th><th>Date Time</th></tr>';
 
         // Loop through each user and display their data
         foreach ($users_data as $user) {
